@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header class="header header-admin"> 
+        <div class="box box-logo"></div>
+        <div class="box box-logout">
+            <i class="fas fa-sign-out-alt icon-out"></i>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <section class="bar bar-tools">
+            <div class="header">
+                <div class="box box-icon-in-out">
+                    <i class="fas fa-ellipsis-v icon-elliip"></i>
+                </div>
+                <div class="box box-img-user"></div>
+                <div class="box box-name-user" toggle-hidden="true">
+                    <p> Admin </p>
+                </div>
+            </div>
+            <div class="body">
+                <ul>
+                    <li>
+                        <i class="fas fa-chalkboard-teacher icon icn"></i>
+                        <span class="overview-database" toggle-hidden="false"> Tổng quan </span>
+                    </li>
+                    <li>
+                        <i class="fas fa-address-card icon icn"></i>
+                        <span class="info-user" toggle-hidden="false"><a href="./my-info.html"> Quản lý người dùng </a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-feather-alt icon icn"></i>
+                        <span class="posts" toggle-hidden="false"><a href="./posts.html"> Bài viết </a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-comment-dots icon icn"></i>
+                        <span class="posts" toggle-hidden="false"><a href="./comment.html"> Bình luận </a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-pie icon icn"></i>
+                        <span class="chart" toggle-hidden="false"><a href="./statistical.html"> Thống kê </a></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content content-defalut">
+            <div class="container container-overview"> 
+                <h2><i class="fas fa-caret-right"></i> Tổng quan bài viết </h2>
+                <div class="overview-posts-viewer-likes">
+                    <div class="box box-posts">
+                        <div class="my-overview-posts"> 
+                            <h3>Tổng số bài viết</h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-feather-alt"></i> 120 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-viewer">
+                        <div class="my-overview-viewer"> 
+                            <h3>Tổng số người xem </h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-eye"></i> 10001 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-likes">
+                        <div class="my-overview-likes"> 
+                            <h3>Tổng số người thích</h3>    
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-thumbs-up"></i> 1210 </p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container container-advertisement">
+                <h2><i class="fas fa-caret-right"></i> Tổng quan lượt click quảng cáo </h2>
+                <div class="overview-advertisement">
+                    <div class="box box-advertisement-all">
+                        <div class="my-advertisement-all"> 
+                            <h3>Tổng số click</h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-mouse"></i> 1189 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-advertisement-month">
+                        <div class="my-advertisement-month"> 
+                            <h3>Tổng số click trong tháng </h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-mouse"></i> 164 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-advertisement-day">
+                        <div class="my-advertisement-day"> 
+                            <h3>Tổng số click trong ngày</h3>    
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-mouse"></i> 23 </p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container container-comment">
+                <h2><i class="fas fa-caret-right"></i> Tổng quan lượt bình luận </h2>
+                <div class="overview-comment">
+                    <div class="box box-commemt-all">
+                        <div class="my-comment-all"> 
+                            <h3>Tổng số bình luận</h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-comment"></i> 4907</p>    
+                        </div>
+                    </div>
+                    <div class="box box-comment-month">
+                        <div class="my-comment-month"> 
+                            <h3>Tổng số bình luận trong tháng </h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-comment"></i> 508 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-comment-day">
+                        <div class="my-comment-day"> 
+                            <h3>Tổng số bình luận trong ngày</h3>    
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-comment"></i> 43 </p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

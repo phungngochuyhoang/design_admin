@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header class="header header-admin"> 
+        <div class="box box-logo"></div>
+        <div class="box box-logout">
+            <i class="fas fa-sign-out-alt icon-out"></i>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <section class="bar bar-tools">
+            <div class="header">
+                <div class="box box-icon-in-out">
+                    <i class="fas fa-ellipsis-v icon-elliip"></i>
+                </div>
+                <div class="box box-img-user"></div>
+                <div class="box box-name-user" toggle-hidden="true">
+                    <p> Admin </p>
+                </div>
+            </div>
+            <div class="body">
+                <ul>
+                    <li>
+                        <i class="fas fa-chalkboard-teacher icon icn"></i>
+                        <span class="overview-database" toggle-hidden="false"><a href="./index.html">Tổng quan</a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-address-card icon icn"></i>
+                        <span class="info-user" toggle-hidden="false"> Quản lý người dùng </span>
+                    </li>
+                    <li>
+                        <i class="fas fa-feather-alt icon icn"></i>
+                        <span class="posts" toggle-hidden="false"><a href="./posts.html"> Bài viết </a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-comment-dots icon icn"></i>
+                        <span class="posts" toggle-hidden="false"><a href="./comment.html"> Bình luận </a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-pie icon icn"></i>
+                        <span class="chart" toggle-hidden="false"><a href="./statistical.html"> Thống kê </a></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content content-defalut">
+            <div class="container container-my-info">
+                <h1> Thông tin người dùng </h1>
+                <div class="box box-search"> 
+                    <form action="">
+                        <input type="text" name="data-search">
+                        <button type="submit" name="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="box box-table">
+                    <table>
+                        <tr>
+                            <td> Stt </td>
+                            <td> Tài khoản </td>
+                            <td> Chức năng </td>
+                        </tr>
+                        <tr>
+                           <td> 1 </td>
+                           <td> demo_user </td>
+                           <td><a href="./detail-user.html"> Chi Tiết </a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

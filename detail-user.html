@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header class="header header-admin"> 
+        <div class="box box-logo"></div>
+        <div class="box box-logout">
+            <i class="fas fa-sign-out-alt icon-out"></i>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <section class="bar bar-tools">
+            <div class="header">
+                <div class="box box-icon-in-out">
+                    <i class="fas fa-ellipsis-v icon-elliip"></i>
+                </div>
+                <div class="box box-img-user"></div>
+                <div class="box box-name-user" toggle-hidden="true">
+                    <p> Admin </p>
+                </div>
+            </div>
+            <div class="body">
+                <ul>
+                    <li>
+                        <i class="fas fa-chalkboard-teacher icon icn"></i>
+                        <span class="overview-database" toggle-hidden="false"><a href="./index.html">Tổng quan</a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-address-card icon icn"></i>
+                        <span class="info-user" toggle-hidden="false"> Quản lý người dùng </span>
+                    </li>
+                    <li>
+                        <i class="fas fa-feather-alt icon icn"></i>
+                        <span class="posts" toggle-hidden="false"><a href="./posts.html"> Bài viết </a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-comment-dots icon icn"></i>
+                        <span class="posts" toggle-hidden="false"><a href="./comment.html"> Bình luận </a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-pie icon icn"></i>
+                        <span class="chart" toggle-hidden="false"><a href="./statistical.html"> Thống kê </a></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content content-defalut">
+           <div class="container container-detail-user">
+               <div class="box detail-back">
+                   <a href="./my-info.html"> <i class="fas fa-long-arrow-alt-left"></i> Quay về </a>
+               </div>
+               <div class="box detail-info-user">
+                   <h1> Thông tin chi tiết của demo_user</h1>
+                    <ul>
+                        <li><strong>Họ Tên:</strong> <span class="detail-name"> Lê Bá Long </span></li>
+                        <li><strong>Giới tính:</strong> <span class="detail-gendet"> Nam </span></li>
+                        <li><strong>Ngày sinh:</strong> <span class="detail-birthday"> 20-07-2001 </span></li>
+                        <li><strong>Quê quán:</strong> <span class="detail-hometown"> Đà Nẵng </span></li>
+                        <li><strong>Số điện thoại:</strong> <span class="detail-phone"> 0905 123 234 </span></li>
+                        <li><strong>Email:</strong> <span class="detail-phone"> balong2001@gmail.com </span></li>
+                    </ul>
+               </div>
+           </div>
+        </section>
+
+    </main>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
